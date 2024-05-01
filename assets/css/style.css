@@ -31,6 +31,10 @@ p {
 
 /*------------------------------------ All spacing classes -------------------------------------*/
 
+.pt-16 {
+  padding-top: 16px;
+}
+
 .pt-20 {
   padding-top: 20px;
 }
@@ -39,11 +43,41 @@ p {
   padding-top: 22px;
 }
 
+.pt-71 {
+  padding-top: 71px;
+}
+
+.pb-110 {
+  padding-bottom: 110px;
+}
+
+.py-123 {
+  padding-top: 123px;
+  padding-bottom: 123px;
+}
+
 .pb-129 {
   padding-bottom: 129px;
 }
 
+.py-228{
+  padding-top: 228px;
+  padding-bottom: 228px;
+}
+
 /*------------------------------------ commen classes ------------------------------------------*/
+
+.mw-622 {
+  max-width: 622px;
+}
+
+.mw-940{
+  max-width: 940px;
+}
+
+.mw-1024 {
+  max-width: 1024px;
+}
 
 /*------------------------------------ flex related classes ------------------------------------*/
 
@@ -55,6 +89,10 @@ p {
   border-radius: 79px;
   background: var(--btn-gradient);
   box-shadow: 0px 8px 30px 0px var(--color-1b);
+}
+
+.z-1 {
+  z-index: 1;
 }
 
 /*------------------------------------ header footer or sections--------------------------------*/
@@ -150,13 +188,42 @@ p {
 }
 
 /*-------------------------------------- section-1-------------------------------------*/
-.section1{
-background-image: url('../images/png/section1.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+.section1 {
+  background-image: url("../images/png/section1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+.col6-right {
+  max-width: 369px;
+}
+
+/*-------------------------------------- section-2-------------------------------------*/
+
+.gif-sec2 {
+  max-width: 1320px;
+  border-radius: 13px;
+  border: 5px solid #1babfe;
+}
+
+.left-side-ecclips {
+  left: 0;
+  top: 43%;
+}
+
+.right-side-ecclips {
+  right: 0;
+  top: 43%;
+}
+
+/*-------------------------------------- section-3 -------------------------------------*/
+
+.section3{
+    background-image: url("../images/png/section3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 /*------------------------------------ all media screens--------------------------------*/
 

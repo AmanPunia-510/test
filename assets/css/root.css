@@ -47,6 +47,8 @@
   --fw-900: 900;
 
   /* colors */
+  --color-6d: #6D6BD2;
+  --color-b2: #B2B4B7;
   --white-color: #ffffff;
   --black-color: #000000;
   --color-1b: #1babfe;
@@ -184,6 +186,14 @@
 
 .color-1b {
   color: var(--color-1b);
+}
+
+.color-6d{
+  color: var(--color-6d);
+}
+
+.color-b2{
+  color: var(--color-b2);
 }
 
 .bg-black {
