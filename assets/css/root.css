@@ -77,6 +77,12 @@
     rgba(255, 255, 255, 0.1) 0.01%,
     rgba(255, 255, 255, 0.03) 99.99%
   );
+
+  --border-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
   --btn-gradient: linear-gradient(149.67deg, #815cc8 29.44%, #1babfe 81.54%);
 }
 
@@ -224,11 +230,11 @@
   color: var(--color-b2);
 }
 
-.color-19{
+.color-19 {
   color: var(--color-19);
 }
 
-.color-99{
+.color-99 {
   color: var(--color-99);
 }
 
@@ -236,15 +242,29 @@
   background-color: var(--black-color);
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --fs-14xl: 64px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --fs-14xl: 48px;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
-    --fs-sm: 14px;
-    --fs-md: 16px;
-    --fs-lg: 18px;
-    --fs-xl: 20px;
-    --fs-2xl: 20px;
-    --fs-3xl: 28px;
-    --fs-4xl: 26px;
-    --fs-5xl: 29px;
+    --fs-14xl: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --fs-xl: 16px;
+    --fs-6xl: 24px;
+    --fs-7xl: 30px;
+    --fs-14xl: 30px;
   }
 }

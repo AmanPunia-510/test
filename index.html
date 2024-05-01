@@ -16,23 +16,23 @@
     <header class="header w-100 min-vh-100 d-flex flex-column">
         <nav class="nav">
             <div class="container">
-                <div class="navbar">
+                <div class="navbar d-flex align-items-center justify-content-between">
                     <div class="page-logo">
                         <img src="./assets/images/png/page-logo.png" alt="page-logo" class="main-logo">
                     </div>
 
                     <input type="checkbox" id="checkbox" hidden>
-                    <label for="checkbox" class="toggle d-flex flex-column d-xxl-none z-31">
+                    <label for="checkbox" class="toggle d-flex flex-column d-lg-none z-31">
                         <div class="bars" id="bar1"></div>
                         <div class="bars" id="bar2"></div>
                         <div class="bars" id="bar3"></div>
                     </label>
 
                     <ul class="navbar-items d-flex align-items-center gap-40">
-                        <li><a href="#" class="fw-700 fs-2xl white-color ff-josfin lh-150">About</a></li>
-                        <li><a href="#" class="fw-700 fs-2xl white-color ff-josfin lh-150">Presale $GILD</a></li>
-                        <li><a href="#" class="fw-700 fs-2xl white-color ff-josfin lh-150">Staking $GILD</a></li>
-                        <li><a href="#" class="fw-700 fs-2xl white-color ff-josfin lh-150">$GILD Nodes</a></li>
+                        <li class="nav-list"><a href="#" class="fw-400 fs-2xl white-color ff-josfin lh-150">About</a></li>
+                        <li class="nav-list"><a href="#" class="fw-400 fs-2xl white-color ff-josfin lh-150">Presale $GILD</a></li>
+                        <li class="nav-list"><a href="#" class="fw-400 fs-2xl white-color ff-josfin lh-150">Staking $GILD</a></li>
+                        <li class="nav-list"><a href="#" class="fw-400 fs-2xl white-color ff-josfin lh-150">$GILD Nodes</a></li>
                         <li><button
                                 class="discord-btn commen-btn d-flex justify-content-center align-items-center gap-10">
                                 <img class="discord-png" src="./assets/images/png/discord.png" alt="Discord-png">
@@ -43,7 +43,7 @@
             </div>
         </nav>
 
-        <div class="container d-flex flex-grow-1 flex-column align-items-center justify-content-end pb-129">
+        <div class="container d-flex flex-grow-1 flex-column align-items-center justify-content-center justify-content-lg-end pb-lg-129">
             <h2 class="main-h ff-poppins fw-400 lh-125 white-color fs-14xl text-center mx-auto">There are games... And
                 then
                 there are <span class="color-1b">Gilded</span> Games</h2>
@@ -64,15 +64,15 @@
     </header>
 
     <main>
-        <!-- nft section -->
+        <!-- NFT Section -->
         <section class="section1 w-100">
             <div class="container">
-                <div class="row align-items-center py-123">
-                    <div class="col-6">
+                <div class="row flex-column-reverse flex-lg-row align-items-center py-lg-123 p-0">
+                    <div class="col-12 col-lg-6">
                         <div class="mw-622">
-                            <h2 class="fw-700 fs-10xl lh-150 white-color ff-josfin"><span class="color-6d">NFT</span>
+                            <h2 class="fw-700 fs-10xl lh-150 white-color ff-josfin text-center text-lg-start"><span class="color-6d">NFT</span>
                                 Utility</h2>
-                            <p class="ff-poppins fw-400 fs-xl lh-150 color-b2 pt-16">Lorem ipsum dolor sit amet,
+                            <p class="ff-poppins fw-400 fs-xl lh-150 color-b2 pt-16 text-center text-lg-start">Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit. Proin curabitur iaculis id cursus dignissim. Volutpat
                                 placerat
                                 volutpat commodo id ultricies volutpat vestibulum. Egestas venenatis dignissim fames
@@ -84,15 +84,15 @@
                                 lectus magna sed fusce diam urna. Quam magna duis imperdiet posuere iaculis.</p>
                         </div>
                     </div>
-                    <div class="col-6 d-flex justify-content-center">
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
                         <img src="./assets/images/png/sec1-col6.png" alt="sec1-col6" class="col6-right w-100">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- earn section -->
-        <section class="section2 position-relative pb-110">
+        <!-- Earn Section -->
+        <section class="section2 position-relative pb-5 pb-lg-110">
             <div class="container pt-71 position-relative z-1">
                 <div class="fw-700 fs-10xl lh-150 white-color ff-josfin text-center">Play To <span
                         class="color-1b">Earn</span></div>
@@ -101,20 +101,20 @@
                     other. We have taken inspiration from some of the most popular and successful MMORPG and RPG games
                     and have boiled it
                     down to the best online gameplay that people will actually want to play!</p>
-                <div class="gif-section2">
-                    <img src="./assets/images/gif/section2.gif" alt="section2-gif" class="gif-sec2 w-100 mt-5">
+                <div class="gif-section2 position-relative mt-5">
+                    <img src="./assets/images/gif/section2.gif" alt="section2-gif" class="gif-sec2 w-100">
                 </div>
             </div>
             <img src="./assets/images/png/left-side-ecllips.png" alt="left-side-ecclips"
-                class="left-side-ecclips position-absolute">
+                class="left-side-ecclips position-absolute d-none d-sm-block">
             <img src="./assets/images/png/right-side-ecllips.png" alt="right-side-ecclips"
-                class="right-side-ecclips position-absolute">
+                class="right-side-ecclips position-absolute d-none d-sm-block">
         </section>
 
-        <!-- game section -->
-        <section class="section3">
+        <!-- Game Section -->
+        <section class="section3 overflow-hidden">
             <div class="container">
-                <div class="game fw-400 fs-7xl ff-josfin white-color lh-150 mw-940 text-center mx-auto py-228"><span
+                <div class="game fw-400 fs-7xl ff-josfin white-color lh-150 mw-940 text-center mx-auto py-140 py-lg-228"><span
                         class="position-relative">Gilded</span> Games is a new type of gaming platform, partially owned
                     and operated by its players. Earn
                     Gild tokens by playing
@@ -123,13 +123,13 @@
         </section>
 
         <!-- token section -->
-        <section class="section4 py-130">
+        <section class="section4 py-50 py-lg-130">
             <div class="container">
                 <div class="fw-700 ff-josfin fs-10xl white-color lh-150 text-center mb-59"><span
                         class="color-6d">$GILD</span> Token Info
                 </div>
-                <div class="row">
-                    <div class="col-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-md-0">
                         <div class="token-card px-3 py-4 d-flex flex-column align-items-center">
                             <img src="./assets/images/png/token1.png" alt="token1" class="token1-png">
                             <div class="fw-700 ff-josfin fs-5xl white-color text-center pt-2 lh-150">3 BIllion</div>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-md-0">
                         <div class="token-card px-3 py-4 d-flex flex-column align-items-center">
                             <img src="./assets/images/png/token2.png" alt="token2" class="token2-png">
                             <div class="fw-700 ff-josfin fs-5xl white-color text-center pt-2 lh-150">Pre Sale Token
@@ -147,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-lg-0">
                         <div class="token-card px-3 py-4 d-flex flex-column align-items-center">
                             <img src="./assets/images/png/token3.png" alt="token3" class="token3-png">
                             <div class="fw-700 ff-josfin fs-5xl white-color text-center pt-2 lh-150">100,000+</div>
@@ -155,7 +155,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-xl-0">
                         <div class="token-card px-3 py-4 d-flex flex-column align-items-center">
                             <img src="./assets/images/png/token4.png" alt="token4" class="token4-png">
                             <div class="fw-700 ff-josfin fs-5xl white-color text-center pt-2 lh-150">2,500+</div>
@@ -167,7 +167,7 @@
         </section>
 
         <!-- roadmap section -->
-        <!-- <section class="section5 py-92 overflow-hidden">
+        <section class="section5 py-92 overflow-hidden">
             <div class="container">
                 <div class="fw-700 ff-josfin fs-10xl white-color lh-150 text-center mb-59"><span
                         class="color-6d">Road</span>map
@@ -188,14 +188,14 @@
             </div>
             </div>
 
-        </section> -->
+        </section>
 
-        <!-- uniswap section -->
-        <section class="section6 position-relative">
+        <!-- Uniswap Section -->
+        <section class="section6 position-relative overflow-hidden">
             <div class="container">
-                <div class="row align-items-center pt-300 pb-220">
-                    <div class="col-7">
-                        <div class="fw-700 ff-josfin fs-10xl white-color lh-150 pb-20">Buy On <span
+                <div class="row flex-column-reverse flex-md-row align-items-center pt-300 pb-220 gap-5 gap-md-0">
+                    <div class="col-12 col-md-7 d-flex flex-column align-items-center align-items-md-start">
+                        <div class="fw-700 ff-josfin fs-10xl white-color lh-150 pb-20 text-center text-md-start">Buy On <span
                                 class="color-1b">Uniswap</span></div>
                         <ul>
                             <li
@@ -208,40 +208,40 @@
                                 Announcement and Games</li>
                         </ul>
                     </div>
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <img src="./assets/images/png/sec6.png" alt="sec6-png" class="sec6-img w-100">
                     </div>
                 </div>
             </div>
-            <img src="./assets/images/png/sec6-right.png" alt="sec6-right" class="sec6-right position-absolute">
+            <img src="./assets/images/png/sec6-right.png" alt="sec6-right" class="sec6-right position-absolute d-none d-md-block">
         </section>
 
         <!-- powered by section -->
-        <section class="section7">
+         <section class="section7">
             <div class="container">
                 <div class="fw-700 fs-10xl lh-150 white-color ff-josfin text-center pt-58 pb-68"><span
                         class="color-1b">Powered</span> By:</div>
 
-                <div class="row">
-                    <div class="col-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-md-0">
                         <div class="powered-card d-flex align-items-center justify-content-center px-4 py-4">
                             <img src="./assets/images/png/powered1.png" alt="powerd1-img" class="w-100 powerd1-img">
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-md-0">
                         <div class="powered-card d-flex align-items-center justify-content-center px-4 py-4">
                             <img src="./assets/images/png/powered2.png" alt="powerd2-img" class="w-100 powerd2-img">
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-lg-0">
                         <div class="powered-card d-flex align-items-center justify-content-center px-4 py-4">
                             <img src="./assets/images/png/powered3.png" alt="powerd1-img" class="w-100 powerd3-img">
                         </div>
                     </div>
 
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 mt-4 mt-xl-0">
                         <div class="powered-card d-flex align-items-center justify-content-center px-4 py-4">
                             <img src="./assets/images/png/powered4.png" alt="powerd1-img" class="w-100 powerd4-img">
                         </div>
@@ -249,6 +249,7 @@
                 </div>
             </div>
         </section>
+    
     </main>
 
     <!-- footer with accordian -->
@@ -256,7 +257,7 @@
         <div class="fw-700 fs-10xl lh-150 white-color ff-josfin text-center pb-80">Frequently Asked <span
                 class="color-1b">Questions</span></div>
 
-        <div class="accordian mx-auto">
+        <div class="accordian mx-auto px-3">
             <div class="accordian-box mb-4">
                 <div class="accordian-h-svg d-flex justify-content-between align-items-center">
                     <div class="accordian-h d-flex align-items-center gap-2">
@@ -363,8 +364,8 @@
 
         <div class="sub-footer pt-226">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-6">
+                <div class="row justify-content-between gap-5 gap-md-0">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <img src="./assets/images/png/footer-logo.png" alt="footer-logo" class="footer-logo">
                         <p class="ff-poppins fw-400 fs-md color-b2 lh-160 mw-322 pt-3">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. Proin curabitur iaculis id cursus dignissim.</p>
@@ -420,9 +421,9 @@
 
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-7 d-flex justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="row pt-md-5">
+                            <div class="col-5 col-md-7 d-flex justify-content-md-center">
                                 <ul>
                                     <li class="fw-600 fs-md lh-150 white-color ff-josfin pb-3">About:</li>
                                     <li class="pb-8"><a href="#" class="fw-400 fs-md lh-160 color-b2 ff-josfin">About
@@ -433,7 +434,7 @@
                                             Nodes</a></li>
                                 </ul>
                             </div>
-                            <div class="col-5">
+                            <div class="col-7 col-md-5">
                                 <ul>
                                     <li class="fw-600 fs-md lh-150 white-color ff-josfin pb-3">Gilded Token:</li>
                                     <li class="pb-8"><a href="#"
