@@ -1,0 +1,75 @@
+@import url("../css/root.css");
+
+/*------------------------------------ remove all default spacing ------------------------------------*/
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*------------------------------------ flex related classes ------------------------------------*/
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-23{
+  gap: 23px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+/*------------------------------------ All spacing classes -------------------------------------*/
+
+.pt-20{
+  padding-top: 20px;
+}
+
+/*------------------------------------ commen classes ------------------------------------------*/
+
+/*------------------------------------ flex related classes ------------------------------------*/
+
+.commen-btn {
+  border: none;
+  height: 53px;
+  width: 180px;
+  outline: none;
+  border-radius: 79px;
+  background: var(--btn-gradient);
+  box-shadow: 0px 8px 30px 0px var(--color-1b);
+}
+
+/*------------------------------------ header footer or sections--------------------------------*/
+
+.nav {
+  background: var(--nav-bg);
+}
+
+.header {
+  background-image: url("../images/png/hero-section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar{
+  padding: 21px 0px;
+}
+
+.main-h{
+  max-width: 1045px;
+}
+
+.join-btn{
+  
+}
