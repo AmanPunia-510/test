@@ -15,10 +15,22 @@ p {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /*------------------------------------ flex related classes ------------------------------------*/
+
+.gap-6 {
+  gap: 6px;
+}
 
 .gap-10 {
   gap: 10px;
+}
+
+.gap-18 {
+  gap: 18px;
 }
 
 .gap-23 {
@@ -30,6 +42,10 @@ p {
 }
 
 /*------------------------------------ All spacing classes -------------------------------------*/
+
+.pb-8 {
+  padding-bottom: 8px;
+}
 
 .pt-16 {
   padding-top: 16px;
@@ -63,6 +79,15 @@ p {
   padding-top: 71px;
 }
 
+.pb-80 {
+  padding-bottom: 80px;
+}
+
+.py-92 {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+
 .pb-110 {
   padding-bottom: 110px;
 }
@@ -86,6 +111,10 @@ p {
   padding-bottom: 228px;
 }
 
+.pt-226 {
+  padding-top: 226px;
+}
+
 .pt-300 {
   padding-top: 300px;
 }
@@ -94,11 +123,23 @@ p {
   padding-bottom: 220px;
 }
 
+.mt-27 {
+  margin-top: 27px;
+}
+
 .mb-59 {
   margin-bottom: 59px;
 }
 
+.mt-192 {
+  margin-top: 192px;
+}
+
 /*------------------------------------ commen classes ------------------------------------------*/
+
+.mw-322 {
+  max-width: 322px;
+}
 
 .mw-622 {
   max-width: 622px;
@@ -179,7 +220,7 @@ p {
   width: 100%;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--color-1b);
+  background-color: var(--color-6d);
 }
 
 #bar2 {
@@ -234,7 +275,9 @@ p {
 /*-------------------------------------- section-2-------------------------------------*/
 
 .gif-sec2 {
+  height: 561px;
   max-width: 1320px;
+  object-fit: cover;
   border-radius: 13px;
   border: 5px solid var(--color-1b);
 }
@@ -297,6 +340,11 @@ p {
   transition: all 200ms linear;
 }
 
+/*-------------------------------------- section-5 -------------------------------------*/
+.timeline-image {
+  left: 13%;
+}
+
 /*-------------------------------------- section-6 -------------------------------------*/
 
 .section6 {
@@ -322,18 +370,58 @@ p {
 /*-------------------------------------- section-6 -------------------------------------*/
 .powered-card {
   border: 1px solid;
-  background: linear-gradient(
-    110.75deg,
-    rgba(255, 255, 255, 0.1) 0.01%,
-    rgba(255, 255, 255, 0.03) 99.99%
-  );
+  background: var(--power-gradient);
   border-radius: 24px;
   min-height: 214px;
 }
 
+/*-------------------------------------- footer -------------------------------------*/
+
+.accordian {
+  max-width: 1038px;
+}
+
+.accordian-box {
+  background: var(--accordian-gradient);
+  border-radius: 6px;
+}
+
+.accordian-h-svg {
+  padding: 16px;
+  padding-top: 19px;
+}
+
+.accordian-p {
+  padding: 16px;
+}
+
+.footer {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/png/footer-or-accordian.png");
+}
+
+/*-------------------------------------- Sub-footer -------------------------------------*/
+
+.commen-icons {
+  background: var(--icons-gradient);
+  width: 31.21px;
+  height: 31.21px;
+}
+
+.footer-btm-brdr {
+  border: 1px solid var(--color-19);
+}
+
+.copyright-txt {
+  border-right: 1px solid var(--color-99);
+  padding: 18px;
+}
+
 /*------------------------------------ all hover effects--------------------------------*/
 
-.token-card:hover,.powered-card:hover {
+.token-card:hover,
+.powered-card:hover {
   border: none;
   background: var(--btn-gradient);
   box-shadow: 0px 8px 30px 0px var(--color-1b);

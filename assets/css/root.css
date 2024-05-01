@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +12,7 @@
   /* font faimly */
   --ff-poppins: "Poppins", sans-serif;
   --ff-josfin: "Josefin Sans", sans-serif;
+  --ff-mono: "Montserrat", sans-serif;
 
   /* font-size */
   --fs-sm: 14px;
@@ -47,8 +48,10 @@
   --fw-900: 900;
 
   /* colors */
-  --color-6d: #6D6BD2;
-  --color-b2: #B2B4B7;
+  --color-19: #191919;
+  --color-6d: #6d6bd2;
+  --color-b2: #b2b4b7;
+  --color-99: #999999;
   --white-color: #ffffff;
   --black-color: #000000;
   --color-1b: #1babfe;
@@ -59,6 +62,21 @@
     rgba(196, 196, 196, 0) 100%,
     rgba(255, 255, 255, 0.03) 100%
   );
+  --accordian-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  --power-gradient: linear-gradient(
+    110.75deg,
+    rgba(255, 255, 255, 0.1) 0.01%,
+    rgba(255, 255, 255, 0.03) 99.99%
+  );
+  --icons-gradient: linear-gradient(
+    110.75deg,
+    rgba(255, 255, 255, 0.1) 0.01%,
+    rgba(255, 255, 255, 0.03) 99.99%
+  );
   --btn-gradient: linear-gradient(149.67deg, #815cc8 29.44%, #1babfe 81.54%);
 }
 
@@ -68,6 +86,10 @@
 
 .ff-josfin {
   font-family: var(--ff-josfin);
+}
+
+.ff-mono {
+  font-family: var(--ff-mono);
 }
 
 .fs-sm {
@@ -194,12 +216,20 @@
   color: var(--color-1b);
 }
 
-.color-6d{
+.color-6d {
   color: var(--color-6d);
 }
 
-.color-b2{
+.color-b2 {
   color: var(--color-b2);
+}
+
+.color-19{
+  color: var(--color-19);
+}
+
+.color-99{
+  color: var(--color-99);
 }
 
 .bg-black {
