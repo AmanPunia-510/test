@@ -43,6 +43,10 @@ p {
   padding-top: 22px;
 }
 
+.pt-32 {
+  padding-top: 32px;
+}
+
 .pt-71 {
   padding-top: 71px;
 }
@@ -56,13 +60,22 @@ p {
   padding-bottom: 123px;
 }
 
+.py-130 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .pb-129 {
   padding-bottom: 129px;
 }
 
-.py-228{
+.py-228 {
   padding-top: 228px;
   padding-bottom: 228px;
+}
+
+.mb-59 {
+  margin-bottom: 59px;
 }
 
 /*------------------------------------ commen classes ------------------------------------------*/
@@ -71,7 +84,7 @@ p {
   max-width: 622px;
 }
 
-.mw-940{
+.mw-940 {
   max-width: 940px;
 }
 
@@ -189,9 +202,9 @@ p {
 
 /*-------------------------------------- section-1-------------------------------------*/
 .section1 {
-  background-image: url("../images/png/section1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url("../images/png/section1.png");
 }
 
 .col6-right {
@@ -203,7 +216,7 @@ p {
 .gif-sec2 {
   max-width: 1320px;
   border-radius: 13px;
-  border: 5px solid #1babfe;
+  border: 5px solid var(--color-1b);
 }
 
 .left-side-ecclips {
@@ -218,11 +231,66 @@ p {
 
 /*-------------------------------------- section-3 -------------------------------------*/
 
-.section3{
-    background-image: url("../images/png/section3.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.section3 {
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/png/section3.png");
+}
+
+.game span::after {
+  content: "";
+  top: -76px;
+  left: -108px;
+  width: 102px;
+  height: 102px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/png/upper-quote.png);
+}
+
+.game .game-txt::after {
+  content: "";
+  top: 0;
+  left: 132px;
+  width: 102px;
+  height: 102px;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/png/bottom-quote.png);
+}
+
+/*-------------------------------------- section-4 -------------------------------------*/
+
+.section4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/png/section4.png");
+}
+
+.token-card {
+  border-radius: 13px;
+  background: var(--token-gradient);
+  transition: all 200ms linear;
+}
+
+/*-------------------------------------- section-6 -------------------------------------*/
+
+.section6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/png/section6.png");
+}
+
+/*------------------------------------ all hover effects--------------------------------*/
+
+.token-card:hover {
+  border: none;
+  background: var(--btn-gradient);
+  box-shadow: 0px 8px 30px 0px var(--color-1b);
 }
 
 /*------------------------------------ all media screens--------------------------------*/

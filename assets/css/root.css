@@ -53,6 +53,12 @@
   --black-color: #000000;
   --color-1b: #1babfe;
   --nav-bg: #0000001a;
+  --token-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(196, 196, 196, 0) 100%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
   --btn-gradient: linear-gradient(149.67deg, #815cc8 29.44%, #1babfe 81.54%);
 }
 
