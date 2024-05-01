@@ -21,7 +21,7 @@ p {
   gap: 10px;
 }
 
-.gap-23{
+.gap-23 {
   gap: 23px;
 }
 
@@ -31,8 +31,16 @@ p {
 
 /*------------------------------------ All spacing classes -------------------------------------*/
 
-.pt-20{
+.pt-20 {
   padding-top: 20px;
+}
+
+.pt-22 {
+  padding-top: 22px;
+}
+
+.pb-129 {
+  padding-bottom: 129px;
 }
 
 /*------------------------------------ commen classes ------------------------------------------*/
@@ -62,14 +70,113 @@ p {
   background-size: cover;
 }
 
-.navbar{
+.navbar {
   padding: 21px 0px;
 }
 
-.main-h{
+.main-h {
   max-width: 1045px;
 }
 
-.join-btn{
-  
+.join-btn {
+  background: transparent;
+  box-shadow: unset;
+  border: 1px solid var(--white-color);
+}
+
+/*---------------------------------------------- menubar toggle---------------------------------------------------- */
+
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 3;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--color-1b);
+}
+
+#bar2 {
+  -webkit-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+
+/*-------------------------------------- section-1-------------------------------------*/
+.section1{
+background-image: url('../images/png/section1.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+/*------------------------------------ all media screens--------------------------------*/
+
+@media (max-width: 1400px) {
+  .navbar-items {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 102vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../images/png/hero-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.5s;
+  }
+
+  .show {
+    left: 0;
+  }
 }
