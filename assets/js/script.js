@@ -44,9 +44,46 @@ menubar.addEventListener("click", () => {
     all_content.style.top = "0";
     all_content.style.left = "0";
     all_content.style.width = "100%";
-  }
-
-  else {
+  } else {
     all_content.style.position = "unset";
   }
-})
+});
+
+// counter
+
+const targetDate = new Date();
+targetDate.setDate(targetDate.getDate() + 19);
+targetDate.setHours(targetDate.getHours() + 10);
+targetDate.setMinutes(targetDate.getMinutes() + 2);
+targetDate.setSeconds(targetDate.getSeconds() + 55);
+
+function updateCountdown() {
+  const now = new Date();
+  const timeLeft = targetDate - now;
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+  const countdownElement = document.getElementById("timer");
+  countdownElement.textContent = `${days}d:${hours}hr:${minutes}min:${seconds}sec`;
+
+  if (timeLeft < 0) {
+    clearInterval(timerInterval);
+    countdownElement.textContent = "Countdown is over!";
+  }
+}
+
+const timerInterval = setInterval(updateCountdown, 1000);
+
+updateCountdown();
+
+// preloader---------------------
+let preloader = document.querySelector(".preloader");
+preloader.classList.add("d-flex");
+setTimeout(() => {
+  preloader.classList.add("d-none");
+}, 3000);

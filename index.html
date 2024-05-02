@@ -8,10 +8,20 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/png/token1.png" type="image/x-icon">
     <title>Test</title>
 </head>
 
 <body class="bg-black">
+    <!-- preloader -->
+    <section>
+        <div class="preloader d-flex align-items-center justify-content-center w-100 h-100">
+            <div class="position-absolute cv_txt d-flex justify-content-center align-items-center flex-column">
+                <div class="preloader_logo"> <img src="./assets/images/png/page-logo.png" alt="nav-icon"></div>
+                <h1 class=" fs-70 text-black ff-p txt-shdow text-white text-center fs-lh-30-54">Loading...</h1>
+            </div>
+        </div>
+    </section>
 
     <header class="header w-100 min-vh-100 d-flex flex-column">
         <nav class="nav">
@@ -52,7 +62,8 @@
             <h2 class="main-h ff-poppins fw-400 lh-125 white-color fs-14xl text-center mx-auto">There are games... And
                 then
                 there are <span class="color-1b">Gilded</span> Games</h2>
-            <div class="white-color fw-600 fs-6xl ff-josfin lh-150 pt-20 text-center"><span class="color-1b">19d
+            <div id="timer" class="white-color fw-600 fs-6xl ff-josfin lh-150 pt-20 text-center"><span
+                    class="color-1b">19d
                     :</span> 10hr : 2min : 55sec</div>
             <div class="fs-lg lh-150 ff-josfin white-color text-center">Remaining Presale Time</div>
             <div class="tow-btns d-flex align-items-center gap-23 justify-content-center pt-22">
