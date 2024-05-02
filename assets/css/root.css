@@ -84,6 +84,9 @@
     rgba(255, 255, 255, 0.1) 100%
   );
   --btn-gradient: linear-gradient(149.67deg, #815cc8 29.44%, #1babfe 81.54%);
+  --gif-sec2: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  --sec2-before: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
+  --timeline-gradient: linear-gradient(90deg, #815cc8 0%, #1babfe 100%);
 }
 
 .ff-poppins {
